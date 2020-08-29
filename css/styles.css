@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  width: 100vw;
+}
+
+h2 {
+  text-decoration: underline;
+  padding: 15px 0;
+  font-family: "Abel", sans-serif;
+}
+
+p {
+  font-family: "Nunito", sans-serif;
+}
+
+.topcon {
+  height: 100vh;
+  position: relative;
+}
+
+.animate__pulse {
+  animation-iteration-count: infinite;
+}
+
+.videocon {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.tophead {
+  color: red;
+  position: relative;
+  bottom: 60%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+svg {
+  position: absolute;
+  bottom: -9%;
+}
+
+.tophead h1 {
+  font-size: 2.5rem;
+}
+
+.tophead p {
+  font-size: 1.3rem;
+}
+
+.midcon {
+  text-align: center;
+  background-color: #8d93ab;
+  padding-bottom: 28px;
+  padding-top: 45px;
+}
+
+.detcon {
+  width: 80%;
+  margin: 0 auto;
+  background-color: lightslategrey;
+}
+
+.row .card {
+  padding: 0;
+}
+
+.row {
+  justify-content: center;
+  column-gap: 30px;
+  margin: 30px auto;
+}
+
+.midcon > p {
+  margin-top: 25px;
+}
+
+.gallcon {
+  width: 90%;
+  margin: 0 auto;
+  height: 70vh;
+  overflow-y: scroll;
+}
+
+.container-fluid .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.container-fluid .column {
+  flex: 25%;
+  max-width: 33.3%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  filter: grayscale(1) brightness(0.5);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+.column img:hover {
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
+
+.guestcon {
+  text-align: center;
+}
+
+.guestcon .container {
+  background-color: black;
+  width: 55vw;
+  padding: 0;
+  height: 50vh;
+}
+
+.carousel {
+  width: inherit;
+  height: inherit;
+}
+
+.carousel-inner {
+  width: inherit;
+  height: inherit;
+}
+
+.carousel-item {
+  width: inherit;
+  height: inherit;
+}
+
+.carousel-item img {
+  width: inherit;
+  height: inherit;
+}
+
+.contactcon {
+  max-height: max-content;
+  width: 100vw;
+  overflow: hidden;
+  text-align: center;
+  background-color: #8d93ab;
+  margin-top: 35px;
+}
+
+@media screen and (max-width: 780px) {
+  .detcon .row {
+    row-gap: 20px;
+  }
+
+  .detcon {
+    padding: 6px;
+  }
+
+  .gallcon .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .gallcon .column img {
+    filter: grayscale(0) brightness(1);
+  }
+
+  .midcon .detcon {
+    height: 50vh;
+    overflow-y: scroll;
+  }
+
+  .container {
+    width: 90vw;
+    height: 55vw;
+  }
+
+  .contactcon {
+    height: 680px;
+    overflow: unset;
+  }
+
+  .mapcon iframe {
+    height: 300px;
+    width: inherit;
+  }
+
+  .guestcon .container {
+    background-color: black;
+    width: 85vw;
+    padding: 0;
+    height: 45vh;
+  }
+}
